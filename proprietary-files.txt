@@ -5,7 +5,6 @@
 #
 # The following depend on compiler intrinsic symbols that are not exported:
 # com.lge.node.{elpis,elvis,lavis}, com.qti.node.memcpy, liblgae_main
-# audio.primary.judypn depends on many GNU Makefile targets
 
 # ADSP
 vendor/bin/chre
@@ -73,13 +72,6 @@ vendor/lib/rfsa/adsp/libsysmon_skel.so
 vendor/lib/rfsa/adsp/libsysmondomain_skel.so
 vendor/lib/rfsa/adsp/lowi_client.so
 vendor/lib/rfsa/adsp/mmecns_module.so.1
-
-# Audio
-vendor/lib/hw/audio.primary.sdm845.so:vendor/lib/hw/audio.primary.judypn.so;FIX_SONAME;DISABLE_CHECKELF
-vendor/lib/libaudio_log_utils.so
-vendor/lib64/hw/audio.primary.sdm845.so:vendor/lib64/hw/audio.primary.judypn.so;FIX_SONAME;DISABLE_CHECKELF
-vendor/lib64/libaudio_log_utils.so
-
 # Audio - ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/Codec_cal.acdb
